@@ -8,11 +8,12 @@ import { User } from 'src/app/models/user.model';
 })
 export class OneUserComponent implements OnInit {
 
-  @Input() user!: User;
+  @Input() user!: any;
   
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.user);
   }
 
 }

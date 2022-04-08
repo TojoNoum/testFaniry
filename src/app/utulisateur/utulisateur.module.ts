@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { UtulisateurRoutingModule } from './utulisateur-routing.module';
 import { UtulisateurComponent } from './components/utulisateur/utulisateur.component';
 import { OneUserComponent } from './components/one-user/one-user.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -12,11 +13,13 @@ import { OneUserComponent } from './components/one-user/one-user.component';
     OneUserComponent
   ],
   exports: [
-    UtulisateurComponent
+    UtulisateurComponent,
+
   ],
   imports: [
     CommonModule,
-    UtulisateurRoutingModule
+    UtulisateurRoutingModule,
+    HttpClientModule
   ]
 })
 export class UtulisateurModule { }

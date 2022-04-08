@@ -1,5 +1,12 @@
 <div class="card">
-    <p>{{user.name}}</p>
-    <p>{{user.firstName}}</p>
-    <p>{{user.telephone}}</p>
+    <img src="{{user.picture.large}}" alt="{{user.picture.thumbnail}}">
+    <p>nom: {{user.name.first}}</p>
+    <p>prenom: {{user.name.last}}</p>
+    <p>surnom: {{user.name.title}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>Uuid: {{user.login.uuid}}</p>
+    <p>username: {{user.login.username}}</p>
+    <p>password: {{user.login.password}}</p>
+    <p>Date de gesitrement: {{user.registered.date}}</p>
+ 
 </div>
